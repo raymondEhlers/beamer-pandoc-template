@@ -14,5 +14,5 @@ all: {{cookiecutter.filename}}.md
 
 draft: all
 	# The next version of the draft will be the number of pdf files + 1
-	cp {{cookiecutter.filename}}.pdf drafts/$(shell date '+%Y-%m-%d').{{cookiecutter.filename}}.v$(NEXT_VERSION).pdf
+	cp {{cookiecutter.filename}}.pdf drafts/$(shell date '+%Y-%m-%d').{{cookiecutter.author_identifier}}.{{cookiecutter.filename}}.v$(NEXT_VERSION).pdf
 

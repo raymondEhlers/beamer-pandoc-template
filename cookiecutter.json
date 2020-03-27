@@ -1,13 +1,13 @@
 {
     "date": "{% now 'local' %}",
-    "identifier": "project_name",
+    "identifier": "presentation_filename",
     "directory_name": "{{cookiecutter.date|format_time}}-{{cookiecutter.identifier.replace('_', '-')}}",
-    "filename": "{{cookiecutter.identifier}}",
+    "filename": "{{cookiecutter.identifier.replace('-', '_')}}",
     "title": "My Presentation",
     "subtitle": "",
     "author": "Raymond Ehlers",
     "short_author": "Raymond Ehlers (ORNL)",
-    "mini_author": "rehlers",
+    "author_identifier": "rehlers",
     "institute": "Oak Ridge National Lab",
     "_extensions": ["format_time.FormatTime"]
 }
