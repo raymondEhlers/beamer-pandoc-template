@@ -6,8 +6,9 @@
     "title": "My Presentation",
     "subtitle": "",
     "author": "Raymond Ehlers",
-    "short_author": "Raymond Ehlers (ORNL)",
     "author_identifier": "rehlers",
+    "include_UTK": 0,
+    "short_author": "Raymond Ehlers (ORNL)",
     "institute": "Oak Ridge National Lab",
     "_extensions": ["format_time.FormatTime"]
 }
