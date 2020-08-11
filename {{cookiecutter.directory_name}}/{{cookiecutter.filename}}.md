@@ -28,6 +28,10 @@ header-includes:
 # Customize beamer
 # Customize the footer to include the short author followed by the date.
 - \setbeamertemplate{frame footer}{\insertshortauthor~-~\insertdate}
+# Font customization. Somehow the font sizes look smaller in the green, so we increase a number of them.
+- \setbeamerfont{title}{size=\LARGE}
+- \setbeamerfont{frametitle}{size=\Large}
+- \setbeamerfont{author}{size=\normalsize}
 # Customize metropolis colorscheme.
 # Normally, we would just define normal text as ORNLGreen and be done with it. However, the
 # green text is hard to read on slides. So we need to make the normal text black, and then update
@@ -98,5 +102,5 @@ theme: metropolis
 
 ## {.plain .standout}
 
-Backup
+\LARGE Backup
 
