@@ -58,10 +58,12 @@ header-includes:
 - |
   \titlegraphic{
       \begin{tikzpicture}[remember picture,overlay]
-          % Position other logo relative to the ALICE logo.
-          \node [scale=0.14] (aliceTitleLogo) [above left= 1.25cm and 1.25cm of current page.south east] {\pgfuseimage{beamerTitleLogoALICE}};
-          \node [scale=0.05] (ORNLTitleLogo) [above left= -1.1cm and 0.08cm of aliceTitleLogo] {\pgfuseimage{beamerTitleLogoORNL}};
-          \node [scale=0.48] (UTKTitleLogo) [below left= -1.3cm and 0.08cm of aliceTitleLogo] {\pgfuseimage{beamerTitleLogoUTK}};
+          % Position logos relative to the corner.
+          %\node [scale=0.14] (JetscapeTitleLogo) [above left= 2.9cm and 0.95cm of current page.south east] {\pgfuseimage{beamerTitleLogoJetscape}};
+          \node [scale=0.05] (ORNLTitleLogo) [above left= 1.7cm and 0.5cm of current page.south east] {\pgfuseimage{beamerTitleLogoORNL}};
+          \node [scale=0.48] (UTKTitleLogo) [above left= 0.5cm and 0.5cm of current page.south east] {\pgfuseimage{beamerTitleLogoUTK}};
+          %\node [scale=0.1275] (JetscapeTitleLogo) [above left= 2.9cm and 0.9cm of current page.south east] {\pgfuseimage{beamerTitleLogoJetscape}};
+          \node [scale=0.1275] (JetscapeTitleLogo) [above= 0.1 cm of ORNLTitleLogo] {\pgfuseimage{beamerTitleLogoJetscape}};
       \end{tikzpicture}
   }
 {%- else %}
@@ -69,7 +71,7 @@ header-includes:
   \titlegraphic{
       \begin{tikzpicture}[remember picture,overlay]
           % Position other logo relative to the ALICE logo.
-          \node [scale=0.14] (aliceTitleLogo) [above left= 1.25cm and 1.5cm of current page.south east] {\pgfuseimage{beamerTitleLogoALICE}};
+          \node [scale=0.14] (aliceTitleLogo) [above left= 0.25cm and 1.0cm of current page.south east] {\pgfuseimage{beamerTitleLogoALICE}};
           % NOTE: The y shift is much smaller than the 1cm value implies...
           \node [scale=0.06, yshift=1cm] (ORNLTitleLogo) [left=0.15cm of aliceTitleLogo] {\pgfuseimage{beamerTitleLogoORNL}};
       \end{tikzpicture}
