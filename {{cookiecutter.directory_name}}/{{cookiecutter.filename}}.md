@@ -9,7 +9,7 @@ shortAuthor: {{cookiecutter.short_author}}
 institute: |
  \inst{1}{{cookiecutter.institute}}
 
-date: {{ cookiecutter.date|format_time('YYYY MMMM DD') }}
+date: {{ cookiecutter.date|format_time('DD MMMM YYYY') }}
 
 graphics: true
 header-includes:
