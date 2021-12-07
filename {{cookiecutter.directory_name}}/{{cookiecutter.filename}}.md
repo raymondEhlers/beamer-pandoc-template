@@ -70,10 +70,10 @@ header-includes:
 - |
   \titlegraphic{
       \begin{tikzpicture}[remember picture,overlay]
-          % Position other logo relative to the ALICE logo.
-          \node [scale=0.14] (aliceTitleLogo) [above left= 0.25cm and 1.0cm of current page.south east] {\pgfuseimage{beamerTitleLogoALICE}};
-          % NOTE: The y shift is much smaller than the 1cm value implies...
-          \node [scale=0.06, yshift=1cm] (ORNLTitleLogo) [left=0.15cm of aliceTitleLogo] {\pgfuseimage{beamerTitleLogoORNL}};
+          % First, position the bottom right corner of the ORNL logo relative to the corner of the page.
+          \node [scale=0.06, anchor=south east] (ORNLTitleLogo) [above left= 0.75cm and 0.75cm of current page.south east] {\pgfuseimage{beamerTitleLogoORNL}};
+          % Position ALICE logo relative to the ORNL logo, aligning the right edges
+          \node [scale=0.14, above = 2cm of ORNLTitleLogo.east, anchor=east] (aliceTitleLogo) {\pgfuseimage{beamerTitleLogoALICE}};
       \end{tikzpicture}
   }
 {%- endif %}
