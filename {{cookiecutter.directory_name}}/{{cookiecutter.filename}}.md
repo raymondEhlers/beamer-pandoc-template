@@ -23,7 +23,7 @@ header-includes:
 - \usetikzlibrary{shapes,arrows}
 - \usetikzlibrary{fit,calc} # For creating block diagrams.
 - \usetikzlibrary{positioning}
-- \input{$HOME/.local/share/pandoc/preamble/beamer.oakRidge.tex}
+- \input{$HOME/.local/share/pandoc/preamble/beamer.UCB.LBNL.tex}
 - \input{../../shared/shared.tex}
 # Customize beamer
 # Customize the footer to include the short author followed by the date.
@@ -33,26 +33,27 @@ header-includes:
 - \setbeamerfont{frametitle}{size=\Large}
 - \setbeamerfont{author}{size=\normalsize}
 # Customize metropolis colorscheme.
-# Normally, we would just define normal text as ORNLGreen and be done with it. However, the
+# Normally, we would just define normal text as UCBBlue and be done with it. However, the
 # green text is hard to read on slides. So we need to make the normal text black, and then update
 # the theme were needed.
 {#- Main colors #}
-- \definecolor{ORNLGreen}{rgb}{0.0, 0.4745, 0.2} # ORNL Green (primary)
-- \definecolor{ORNLGray}{rgb}{0.9, 0.91, 0.9} # ORNL Grey (secondary)
+- \definecolor{UCBBlue}{HTML}{003262} # UCB Blue (primary) - "Berkeley Blue"
+- \definecolor{UCBLightBlue}{HTML}{3B7EA1} # UCB Light Blue (secondary) - "Founder's Rock"
+- \definecolor{UCBOrange}{HTML}{D9661F} # UCB Orange (secondary) - "Wellman Tile"
 - \setbeamercolor{normal text}{fg=black, bg=white}
 {#- Tweaks any bars, including dividing #}
-- \setbeamercolor{progress bar}{fg=ORNLGray, bg=ORNLGray!50!black!30} # Formula for bg is default in Metropolis.
+- \setbeamercolor{progress bar}{fg=UCBLightBlue, bg=UCBLightBlue!50!black!30} # Formula for bg is default in Metropolis.
 {#- Title page #}
-- \setbeamercolor{titlelike}{fg=ORNLGreen, bg=white}
-- \setbeamercolor{author}{fg=ORNLGreen, bg=white}
-- \setbeamercolor{date}{fg=ORNLGreen, bg=white}
-- \setbeamercolor{institute}{fg=ORNLGreen, bg=white}
+- \setbeamercolor{titlelike}{fg=UCBBlue, bg=white}
+- \setbeamercolor{author}{fg=UCBBlue, bg=white}
+- \setbeamercolor{date}{fg=UCBBlue, bg=white}
+- \setbeamercolor{institute}{fg=UCBBlue, bg=white}
 {#- Structure of the page (bullet point color, etc) #}
-- \setbeamercolor{structure}{fg=ORNLGreen, bg=white}
+- \setbeamercolor{structure}{fg=UCBBlue, bg=white}
 {#- Color of the frame title and background, so we invert it (this appears to be the standard approach) #}
-- \setbeamercolor{palette primary}{fg=white, bg=ORNLGreen}
+- \setbeamercolor{palette primary}{fg=white, bg=UCBBlue}
 {#- Footer color #}
-- \setbeamercolor{footline}{fg=ORNLGreen!90}
+- \setbeamercolor{footline}{fg=UCBBlue!90}
 {#- Deal with the title logo. We have to use the int filter because bool isn't supported... #}
 {%- if cookiecutter.include_UTK|int %}
 - |
@@ -70,10 +71,10 @@ header-includes:
 - |
   \titlegraphic{
       \begin{tikzpicture}[remember picture,overlay]
-          % First, position the bottom right corner of the ORNL logo relative to the corner of the page.
-          \node [scale=0.06, anchor=south east] (ORNLTitleLogo) [above left= 0.75cm and 0.75cm of current page.south east] {\pgfuseimage{beamerTitleLogoORNL}};
-          % Position ALICE logo relative to the ORNL logo, aligning the right edges
-          \node [scale=0.14, above = 2cm of ORNLTitleLogo.east, anchor=east] (aliceTitleLogo) {\pgfuseimage{beamerTitleLogoALICE}};
+          % First, position the bottom right corner of the UCB logo relative to the corner of the page.
+          \node [scale=0.35, anchor=south east] (UCBTitleLogo) [above left= 0.75cm and 0.75cm of current page.south east] {\pgfuseimage{beamerTitleLogoUCB}};
+          % Position ALICE logo relative to the UCB logo, aligning the right edges
+          \node [scale=0.14, above = 1.8cm of UCBTitleLogo.east, anchor=east] (aliceTitleLogo) {\pgfuseimage{beamerTitleLogoALICE}};
       \end{tikzpicture}
   }
 {%- endif %}

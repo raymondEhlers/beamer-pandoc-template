@@ -8,7 +8,7 @@
     "author": "Raymond Ehlers",
     "author_identifier": "rehlers",
     "include_UTK": 0,
-    "short_author": "Raymond Ehlers (ORNL)",
-    "institute": "Oak Ridge National Lab",
+    "short_author": "Raymond Ehlers (LBNL/UCB)",
+    "institute": "Lawrence Berkeley National Lab/UC Berkeley",
     "_extensions": ["format_time.FormatTime"]
 }
