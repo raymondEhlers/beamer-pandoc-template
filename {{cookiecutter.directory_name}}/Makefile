@@ -10,7 +10,7 @@ NEXT_VERSION:= $(shell echo $$(( $(N_DRAFTS) + 1 )))
 .PHONY: all draft
 
 all: {{cookiecutter.filename}}.md
-	 pandoc --to beamer --verbose --standalone --pdf-engine-opt=-shell-escape {{cookiecutter.filename}}.md -o {{cookiecutter.filename}}.pdf
+	 pandoc --to beamer --verbose --standalone --pdf-engine=xelatex --pdf-engine-opt=-shell-escape {{cookiecutter.filename}}.md -o {{cookiecutter.filename}}.pdf
 
 draft: all
 	# The next version of the draft will be the number of pdf files + 1
