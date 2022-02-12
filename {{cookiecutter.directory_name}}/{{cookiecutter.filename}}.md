@@ -16,13 +16,13 @@ mathspec: true
 {#- NOTE: We could reduce the size of the font (to an extent), but I think scaling looks better, so keep it this way -#}
 mainfont: Noto Sans
 mainfontoptions:
-- Scale=0.8
+- Scale=0.81
 - ItalicFont=Noto Sans Italic
 - BoldFont=Noto Sans Bold
 - BoldItalicFont=Noto Sans Bold Italic
 mathfont: Noto Sans Math
 mathfontoptions:
-- Scale=0.8
+- Scale=0.81
 - ItalicFont=Noto Sans Italic
 - BoldFont=Noto Sans Bold
 - BoldItalicFont=Noto Sans Bold Italic
