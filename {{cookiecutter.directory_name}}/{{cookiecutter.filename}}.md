@@ -11,9 +11,9 @@ institute: |
 date: {{ cookiecutter.date|format_time('DD MMMM YYYY') }}
 
 graphics: true
-{#- mathspec seems to be required to get an output with Noto Sans. See: https://tex.stackexchange.com/a/118254 -#}
+{#- mathspec seems to be required to get an output with Noto Sans. See: https://tex.stackexchange.com/a/118254 #}
 mathspec: true
-{#- NOTE: We could reduce the size of the font (to an extent), but I think scaling looks better, so keep it this way -#}
+{#- NOTE: We could reduce the size of the font (to an extent), but I think scaling looks better, so keep it this way #}
 mainfont: Noto Sans
 mainfontoptions:
 - Scale=0.81
