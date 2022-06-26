@@ -36,7 +36,7 @@ header-includes:
   \titlegraphic{
       \begin{tikzpicture}[remember picture,overlay]
           % First, position the bottom right corner of the LBL logo relative to the corner of the page.
-          \node [scale=0.12, anchor=south east] (LBLTitleLogo) [above left= 0.5cm and 0.5cm of current page.south east] {\pgfuseimage{beamerTitleLogoLBL}};
+          \node [scale=0.50, anchor=south east] (LBLTitleLogo) [above left= 0.5cm and 0.5cm of current page.south east] {\pgfuseimage{beamerTitleLogoLBL}};
           % Position UCB logo relative to the LBL logo, aligning the right edges
           \node [scale=0.34, above=-0.3cm of LBLTitleLogo.north east, anchor=south east] (UCBTitleLogo) {\pgfuseimage{beamerTitleLogoUCB}};
           % Position JETSCAPE logo relative to the upper right corner, aligning the right edges
