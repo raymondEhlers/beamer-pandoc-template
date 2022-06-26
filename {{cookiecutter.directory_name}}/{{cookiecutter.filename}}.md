@@ -30,8 +30,13 @@ mathfontoptions:
 header-includes:
 - \input{$HOME/.local/share/pandoc/preamble/beamer.UCB.LBNL.tex}
 - \input{../../shared/shared.tex}
-{#- Deal with the title logo. We have to use the int filter because bool isn't supported... #}
+- \input{../../shared/images.tex}
+- \input{../../shared/substructure.tex}
 {%- if cookiecutter.jetscape_talk|int %}
+{%- else %}
+- \input{../../shared/alice.tex}
+{%- endif %}
+{#- Deal with the title logo. We have to use the int filter because bool isn't supported... #}
 - |
   \titlegraphic{
       \begin{tikzpicture}[remember picture,overlay]
